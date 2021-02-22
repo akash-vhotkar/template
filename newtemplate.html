@@ -63,18 +63,16 @@
 
 
     <section id="banner">
-        <div class="container mt-3 mb-3">
-            <div class="row">
+        <div class="showcase1" style="position: absolute;">
+
+            <div>
                 <div class="col-md-6 animate__animated animate__zoomIn">
                     <p class="promo-title">IT Companies</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ipsa, sit odit provident
                         voluptate animi?</p>
                     <a href=""><button> click here</button> <button> click here</button></a>
                 </div>
-                <div class="col-md-6 rightside mb-5">
-                    <img src="./kisspng-isometric-projection-royalty-free-building-illustr-business-center-building-housing-construction-5a9b4181a158a9.0545926615201242896609.png"
-                        class="img-fluid mb-5" alt="">
-                </div>
+
             </div>
 
         </div>
@@ -368,12 +366,18 @@
 
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
     <script>
         AOS.init({
             offset: 200,
             duration: 500
         });
+        particlesJS.load('banner', 'partical.json', function () {
+            console.log('callback - particles.js config loaded');
+        });
     </script>
+
 
 </body>
 
